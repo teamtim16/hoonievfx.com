@@ -1,111 +1,178 @@
-<include target="preferences.html" />
-<p class="skip sr-only sr-only-focusable"><a href="#content">{$lang->skip_to_content}</a></p>
+<body style="">
+<!--
+** KSODESIGN LAYOUT
+** http://ksodesign.com/
+** 1.0.2
+** Copyright 2010 KSODESIGN	 
+** Contributing author : KSJade (ksodesign1@naver.com)
+-->
+
+
+	<p class="skip sr-only sr-only-focusable"><a href="#content">메뉴 건너뛰기</a></p>
 <div id="kso-container">
-	<header class="kso-header">
-		<div class="{$li->header_container}">
+	<header class="kso-header kso-sticky">
+		<div class="container">
 			<div class="navbar navbar-expand-lg bsnav">
-				<a class="navbar-brand" href="{$li->index_url}">
-					<img src="img/logo.png" class="site-logo img-fluid" alt="" cond="!$li->logo_img" />
-					<img src="{$li->logo_img}" class="site-logo img-fluid" alt="" cond="$li->logo_img" />
-				</a>
+				<a class="navbar-brand" href="/">
+										<img src="http://hoonievfx.com/files/attach/images/182/cde1ab5ad6d9634114688f742947b290.png" class="site-logo img-fluid" alt="">				</a>
 				<button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse justify-content-md-end">
 					<ul class="navbar-nav navbar-mobile mr-0">
-						<block loop="$main_menu->list=>$key1,$val1" cond="$val1['link']">
-							<li class="nav-item point-hover <!--@if($val1['list'])-->dropdown<!--@end--> ">
-		                    	<a href="{$val1['href']}" class="nav-link " target="_blank"|cond="$val1['open_window']=='Y'"><span>{$val1['link']}</span> <!--@if($val1['list'])--><i class="caret d-inline-block d-lg-none"></i><!--@end--></a>
-		                     	<ul class="navbar-nav" cond="$val1['list']">
-									<block loop="$val1['list']=>$key2,$val2" cond="$val2['link']">
-		                        		<li class="nav-item <!--@if($val1['list'])-->dropdown<!--@end--> ">
-		                            		<a href="{$val2['href']}" class="nav-link point-hover <!--@if($val2['list'])-->dropdown-toggle<!--@end-->" target="_blank"|cond="$val2['open_window']=='Y'"><span>{$val2['link']}</span></a>
-		                            		<ul class="navbar-nav" cond="$val2['list']">
-												<block loop="$val2['list']=>$key3,$val3" cond="$val3['link']">
-				                                	<li class="nav-item <!--@if($val1['list'])-->dropdown<!--@end--> ">
-				                                    	<a href="{$val3['href']}" class="nav-link point-hover " target="_blank"|cond="$val3['open_window']=='Y'"><span>{$val3['link']}</span></a>
-			                                    		<ul class="navbar-nav" cond="$val3['list']">
-															<block loop="$val3['list']=>$key4,$val4" cond="$val4['link']">
-					                                        	<li class="nav-item <!--@if($val4['selected'])-->active<!--@end-->"><a href="{$val4['href']}" class="nav-link point-hover" target="_blank"|cond="$val3['open_window']=='Y'"><span>{$val4['link']}</span></a></li>
-															</block>
-				                                    	</ul>
-				                                	</li>
-												</block>
-		                            		</ul>
-		                        		</li>
-									</block>
-		                    	</ul>
-		                	</li>
-						</block>
-					</ul>
+													<li class="nav-item point-hover  ">
+		                    	<a href="/Pay" class="nav-link "><span>Pay</span> </a>
+		                     			                	</li>
+													<li class="nav-item point-hover dropdown ">
+		                    	<a href="/page_vZwx59" class="nav-link "><span>Contact</span> <i class="caret d-inline-block d-lg-none"></i></a>
+		                     	<ul class="navbar-nav">
+											                        		<li class="nav-item dropdown ">
+		                            		<a href="/page_zYhf76" class="nav-link point-hover "><span>Artist</span></a>
+		                            				                        		</li>
+											                        		<li class="nav-item dropdown ">
+		                            		<a href="/page_GdpG98" class="nav-link point-hover "><span>test</span></a>
+		                            				                        		</li>
+											                    	</ul>		                	</li>
+											</ul>
 				</div>
-			</div><!--//bsnav -->
+			</div>
 		</div>
 	</header>
 	<div class="bsnav-mobile">
 		<div class="bsnav-mobile-overlay"></div>
-		<div class="navbar"></div>
-	</div><!--//header -->
-
-	<block cond="$li->layout_type!='main'">
-	<section class="sub-top">
-		<div class="{$li->sub_container}">
-			<div class="row align-items-center">					
+		<div class="navbar"><ul class="navbar-nav navbar-mobile mr-0">
+													<li class="nav-item point-hover  ">
+		                    	<a href="/Pay" class="nav-link "><span>Pay</span> </a>
+		                     			                	</li>
+													<li class="nav-item point-hover">
+		                    	<a href="/page_vZwx59" class="nav-link "><span>Contact</span> <i class="caret d-inline-block d-lg-none"></i></a>
+		                     	<ul class="navbar-nav">
+											                        		<li class="nav-item">
+		                            		<a href="/page_zYhf76" class="nav-link point-hover "><span>Artist</span></a>
+		                            				                        		</li>
+											                        		<li class="nav-item">
+		                            		<a href="/page_GdpG98" class="nav-link point-hover "><span>test</span></a>
+		                            				                        		</li>
+											                    	</ul>		                	</li>
+											</ul></div>
+	</div>
+			<section class="kso-promotion">
+		<div id="owl-slider" class="owl-slide owl-carousel owl-theme owl-loaded owl-drag">
+			
+			
+											<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3682px, 0px, 0px); transition: all 0s ease 0s; width: 14728px;"><div class="owl-item cloned" style="width: 1841px;"><div class="item">
+									<img src="http://hoonievfx.com/files/attach/images/182/d5c67d97ed374d53fe0bbad14ed7bc2a.png">
+							</div></div><div class="owl-item cloned" style="width: 1841px;"><div class="item">
+									<img src="http://hoonievfx.com/files/attach/images/182/99b983892094b5c6d2fc3736e15da7d1.png">
+							</div></div><div class="owl-item active" style="width: 1841px;"><div class="item">
+														<img src="http://hoonievfx.com/files/attach/images/182/e8c06b1fbf117ce809128effaaa67b72.png">							</div></div><div class="owl-item" style="width: 1841px;"><div class="item">
+														<img src="http://hoonievfx.com/files/attach/images/182/7088912593cdb2d6d1e77d7896d771df.png">							</div></div><div class="owl-item" style="width: 1841px;"><div class="item">
+									<img src="http://hoonievfx.com/files/attach/images/182/d5c67d97ed374d53fe0bbad14ed7bc2a.png">
+							</div></div><div class="owl-item" style="width: 1841px;"><div class="item">
+									<img src="http://hoonievfx.com/files/attach/images/182/99b983892094b5c6d2fc3736e15da7d1.png">
+							</div></div><div class="owl-item cloned" style="width: 1841px;"><div class="item">
+														<img src="http://hoonievfx.com/files/attach/images/182/e8c06b1fbf117ce809128effaaa67b72.png">							</div></div><div class="owl-item cloned" style="width: 1841px;"><div class="item">
+														<img src="http://hoonievfx.com/files/attach/images/182/7088912593cdb2d6d1e77d7896d771df.png">							</div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="xi-angle-left fa-2x"></i></button><button type="button" role="presentation" class="owl-next"><i class="xi-angle-right fa-2x"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+	</section>
+		
+	<section id="section-icon" class="kso-section point-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="block mb-xs-4">
+						<i class=" fa-3x"></i>
+						<div>
+							<h4>VFX</h4>
+							상상을 현실로 만들어보세요.						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="block mb-xs-4">
+						<i class=" fa-3x"></i>
+						<div>
+							<h4>Digital Intermediate</h4>
+							영상의 분위기를 다시 만들어보세요.							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="block mb-xs-4">
+						<i class=" fa-3x"></i>
+						<div>
+							<h4>Youtube</h4>
+							구독자 총합 600만명의 편집자가 편집해드립니다.							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	<section id="section-about" class="kso-section">
+		<div class="container">
+			<div class="row">
 				<div class="col-lg-12">
-					<h4 class="">{$li->subtop_title}</h4>
+					<h2 class="section-header">About US</h2>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-lg-5 mb-xs-3">
+										<img src="http://hoonievfx.com/files/attach/images/182/b65c9bdae6d045696ae356c3868acbda.png" class="img-fluid" alt="">				</div>
+				<div class="col-lg-6 offset-lg-1">
+					<h4 class="mb-4">HoonieVFX는 3명의 아티스트로 이루어진 회사입니다.</h4>
+					<div class="mb-4">
+						2D Composite, 3D, 색보정, 촬영 및 편집까지 아우르는 3명의 아티스트와 함께 당신의 영상을 알려보세요.						
+					</div>
+									</div>
+			</div>
+		</div>
+	</section>		<section id="section-service" class="kso-section bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="section-header">WORK HISTORY</h2>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col-lg-3">
+					<figure>
+						<a href="https://www.netflix.com/kr/title/80990668">
+														<img src="http://hoonievfx.com/files/attach/images/182/98bf0f6880c94fcc5cb63595a9daab37.png" class="img-fluid mx-auto d-block" alt="">						</a>
+						<figcaption>
+							<h4><a href="https://www.netflix.com/kr/title/80990668" class="point-hover">EXTRACURRICULAR</a></h4>
+							<div>인간수업</div>
+						</figcaption>
+					</figure>					
+				</div>
+				<div class="col-lg-3">
+					<figure>
+						<a href="">
+														<img src="http://hoonievfx.com/files/attach/images/182/5a29b327f9a25e4dd8255fc51de02156.png" class="img-fluid mx-auto d-block" alt="">						</a>
+						<figcaption>
+							<h4><a href="" class="point-hover">KINGDOM THE NORTH OF ASHIN</a></h4>
+							<div>킹덤 아신전</div>
+						</figcaption>
+					</figure>					
+				</div>
+				<div class="col-lg-3">
+					<figure>
+						<a href="">
+														<img src="http://hoonievfx.com/files/attach/images/182/194e4caff956ac80d6b03e3942ed6df2.png" class="img-fluid mx-auto d-block" alt="">						</a>
+						<figcaption>
+							<h4><a href="" class="point-hover">The School Nurse Files</a></h4>
+							<div>보건교사 안은영</div>
+						</figcaption>
+					</figure>					
+				</div>
+				<div class="col-lg-3">
+					<figure>
+						<a href="">
+														<img src="http://hoonievfx.com/files/attach/images/182/912b5d3c3d2afc4c6b1886e4eeaaf9ee.png" class="img-fluid mx-auto d-block" alt="">						</a>
+						<figcaption>
+							<h4><a href="" class="point-hover">MORE AND MORE</a></h4>
+							<div>트와이스 뮤직비디오<br> MORE AND MORE</div>
+						</figcaption>
+					</figure>					
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<div class="kso-contents" id="content">
-		<div class="{$li->sub_container}">
-			<div class="row">					
-				<div class="{$_content_class} space-adjust">						
-					{$content|noescape}
-				</div>
-				<div class="{$_aside_class} visible-md-block visible-lg-block" cond="$li->layout_type!='main' && $li->layout_type!='sub'">
-					<include target="include/aside.html" />
-				</div>
-			</div>
-		</div>
-	</div><!--//contents -->
-	</block>
-
-	<block cond="$li->layout_type=='main'">
-	<section class="kso-promotion">
-		<div id="owl-slider" class="owl-slide owl-carousel owl-theme">
-			<div class="item">
-				<block cond="$li->slide_link1"><a href="{$li->slide_link1}"></block>
-					<img src="https://source.unsplash.com/cXY2LsD82zc/1905x750" cond="!$li->slide_img1" />
-					<img src="{$li->slide_img1}" cond="$li->slide_img1" />
-				<block cond="$li->slide_link1"></a></block>
-			</div>
-			<div class="item">
-				<block cond="$li->slide_link2"><a href="{$li->slide_link2}"></block>
-					<img src="https://source.unsplash.com/5QgIuuBxKwM/1905x750" cond="!$li->slide_img1" />
-					<img src="{$li->slide_img2}" cond="$li->slide_img1" />
-				<block cond="$li->slide_link2"></a></block>
-			</div>
-			<div class="item" cond="$li->slide_img3">
-				<block cond="$li->slide_link3"><a href="{$li->slide_link3}"></block>
-					<img src="{$li->slide_img3}" />
-				<block cond="$li->slide_link3"></a></block>
-			</div>
-			<div class="item" cond="$li->slide_img4">
-				<block cond="$li->slide_link4"><a href="{$li->slide_link4}"></block>
-					<img src="{$li->slide_img4}" />
-				<block cond="$li->slide_link4"></a></block>
-			</div>
-			<div class="item" cond="$li->slide_img5">
-				<block cond="$li->slide_link5"><a href="{$li->slide_link5}"></block>
-					<img src="{$li->slide_img5}" />
-				<block cond="$li->slide_link5"></a></block>
-			</div>
-		</div>
-	</section>
-
-	<include target="templates/default.html" />
-	</block>
-	<section id="section-service" class="kso-section bg-gray">
+	</section>		<section id="section-service" class="kso-section bg-gray">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -156,33 +223,29 @@
 			</div>
 		</div>
 	</section>
-
+	
 	<footer id="section-footer" class="section-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 mb-xs-4">
-					<img src="img/logo.png" class="site-logo img-fluid" alt="" cond="!$li->logo_img" />
-					<img src="{$li->logo_img}" class="site-logo img-fluid" alt="" cond="$li->logo_img" />
-				</div>
+										<img src="http://hoonievfx.com/files/attach/images/182/cde1ab5ad6d9634114688f742947b290.png" class="site-logo img-fluid" alt="">				</div>
 				<div class="col-md-4 offset-lg-1 mb-xs-4">
-					<h5>{$li->footer_title1}</h5>
+					<h5>CONTACT</h5>
 					<div>
-						{$li->footer_cont1}						
+						+82 10 7598 5936 <br>admin@hoonievfx.com<br>
+서울특별시 서초구 강남대로 139						
 					</div>
 				</div>
 				<div class="col-md-4">
-					<h5>{$li->footer_title2}</h5>
+					<h5>COPYRIGHT</h5>
 					<div>
-						{$li->footer_cont2}						
+						ALL COPYRIGHT RESERVED BY HOONIEVFX.						
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer><!--//footer -->
-
-
+	</footer>
 </div>
-<!--// JavaScripts -->
 <script type="text/javascript">
 // <![CDATA[
 	jQuery(function($){
@@ -193,9 +256,7 @@
 				$('.kso-header').removeClass('kso-sticky');
 			}
 		})
-
 		$(document).ready(function(){
-
 			var owl = $('#owl-slider');
 			owl.owlCarousel({
 				items: 1,
@@ -205,18 +266,15 @@
 				dots: true,				
 				navText:["<i class='xi-angle-left fa-2x'></i>","<i class='xi-angle-right fa-2x'></i>"],
 				autoplay: true,
-			    autoplayTimeout: {$li->slide_time},
+			    autoplayTimeout: 5000,
 			    autoplayHoverPause: false		    
 			});
-
 		});
     });
-
 // ]]>
 </script>			
-<load target="inc/bootstrap/js/bootstrap.min.js" />
-<load target="inc/bsnav/dist/bsnav.min.js" />
-<load target="inc/owlcarousel/dist/owl.carousel.min.js" />
-<load target="js/holder.min.js" />
-<load target="js/jquery.scrolltop.js" />
-<load target="js/script.js" />
+<!-- ETC -->
+<div class="wfsr"></div>
+<script src="/addons/autolink/autolink.js?20210106211812"></script><script src="/addons/oembed/jquery.oembed.min.js?20210106211812"></script><script src="/addons/oembed/oembed.min.js?20210106211812"></script><script src="/common/js/plugins/ui/jquery-ui.min.js?20210106211823"></script><script src="/common/js/plugins/ui/jquery.ui.datepicker-ko.js?20210106211823"></script><script src="/addons/resize_image/js/resize_image.min.js?20210106211813"></script><script src="/modules/ncenterlite/tpl/js/ncenterlite.js?20210107230543"></script>
+
+<div id="topcontrol" style="z-index: 98; position: fixed; bottom: 300px; right: 20px; opacity: 1; cursor: pointer;" title="Scroll Back to Top"><i class="fa fa-chevron-up fa-lg scrolltotop hidden-xs conceptBgColor"></i></div></body>
